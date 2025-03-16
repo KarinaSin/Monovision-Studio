@@ -40,7 +40,7 @@ img {
     --footer-padding-inline: 6%;
   }
   @media screen and (max-width: 576px) {
-     --container-padding-inline: 15px;
+    --container-padding-inline: 15px;
     --footer-padding-inline: 15px;
   }
 }
@@ -126,8 +126,8 @@ html {
   }
   @media screen and (max-width: 576px) {
     & {
-    margin-top: 30px;
-    font-size: 16px;
+      margin-top: 30px;
+      font-size: 16px;
     }
   }
 }
@@ -263,6 +263,9 @@ right – сдвиг справа */
 .about {
   background-color: var(--light-color);
   padding-top: 80px;
+  @media screen and (max-width: 576px) {
+    padding-top: 50px;
+  }
 }
 
 .about__title {
@@ -286,12 +289,27 @@ right – сдвиг справа */
   @media screen and (max-width: 1440px) {
     width: 100%;
   }
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 16px;
+  }
 }
 
 .services {
   display: flex;
   column-gap: 10px;
   margin-top: 80px;
+  @media screen and (max-width: 768px) {
+    margin-top: 40px;
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+  @media screen and (max-width: 576px) {
+    margin-top: 20px;
+    row-gap: 20px;
+  }
 }
 
 .services__items {
@@ -329,6 +347,38 @@ right – сдвиг справа */
       background: url("../icons/edit.svg") center center / cover no-repeat;
     }
   }
+  @media screen and (max-width: 768px) {
+    & {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    & li:first-child::before {
+      left: -25px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    & li:nth-child(3)::before {
+      left: -25px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    & li {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    & li:first-child::before {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    & li:nth-child(3)::before {
+      display: none;
+    }
+  }
 }
 
 .services__text {
@@ -338,6 +388,12 @@ right – сдвиг справа */
   letter-spacing: 0.02em;
   line-height: normal;
   color: var(--dark-color);
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 12px;
+  }
 }
 
 .services__item-subtitle {
@@ -346,6 +402,9 @@ right – сдвиг справа */
   font-size: 16px;
   line-height: normal;
   color: var(--dark-color);
+  @media screen and (max-width: 576px) {
+    font-size: 12px;
+  }
 }
 
 .works {
